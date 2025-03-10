@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tab Title -->
+    <title>ARWA - Advanced Pumping Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome / Bootstrap for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon Icon -->
+    <link rel="Icon" href="img/Arwa Logo.png">
+    <!-- Aos Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@n    ext/dist/aos.css" />
+    <style>
+
+
+
+    </style>
+    <!-- https://dashboard.emailjs.com/admin -->
+</head>
+
+<body id="bd">
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="sss">
+            <img id="splash-logo" src="img/Arwa Logo 1 .png" alt="Logo">
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-0 flex-wrap">
+        <div class="contactNav container-fluid p-md-0">
+            <div class="container p-md-0">
+                <div class="row pt-3">
+
+                    <div
+                        class="col-md-6 contactleft d-md-flex d-none align-items-center flex-wrap justify-content-md-start justify-content-center">
+
+                        <p><i class="fa-solid fa-phone text-white fs-5"></i><a href="tel:+918098770708"
+                                style="text-decoration: none;" class="text-white  h6 ps-2"> +91 80987 70708</a>
+                        </p>
+                        <p><i class="fa-regular fa-envelope text-white fs-5 ps-4"></i><a
+                                href="mailto:arwapumps48@gmail.com" style="text-decoration: none;"
+                                class="text-white h6 ps-2"> arwapumps48@gmail.com</a></p>
+
+                    </div>
+                    <div
+                        class="col-md-6 contactright gap-3 d-flex align-items-center py-1 justify-content-md-end justify-content-center mt-md-0 mt-2 pb-md-1 pb-3">
+                        <div id="google_translate_element"></div>
+                        <div class="lang-switcher">
+                            <button style="z-index: 11111;" class="lang-btn btn btn-primary"><i
+                                    class="bi bi-globe-asia-australia"></i> Language</button>
+                            <ul class="lang-menu">
+                                <li data-lang="en"><img src="https://flagcdn.com/w40/gb.png"> English</li>
+                                <li data-lang="es"><img src="https://flagcdn.com/w40/es.png"> Spanish</li>
+                                <li data-lang="fr"><img src="https://flagcdn.com/w40/fr.png"> French</li>
+                                <li data-lang="ar"><img src="https://flagcdn.com/w40/sa.png"> Arabic</li>
+                            </ul>
+                        </div>
+                        <script>
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            }
+
+                            document.querySelectorAll(".lang-menu li").forEach(item => {
+                                item.addEventListener("click", function () {
+                                    var language = this.getAttribute("data-lang");
+                                    var googleTranslateFrame = document.querySelector(".goog-te-combo");
+
+                                    if (googleTranslateFrame) {
+                                        googleTranslateFrame.value = language;
+                                        googleTranslateFrame.dispatchEvent(new Event("change"));
+
+                                        // Apply animation effect
+                                        document.body.classList.add("fade-effect");
+                                        setTimeout(() => document.body.classList.remove("fade-effect"), 800);
+                                    }
+                                });
+                            });
+                        </script>
+                        <div style="margin-top: -15px;" class="icon-box d-flex gap-3 fs-4 ">
+                            <a style="width: 40px;height: 40px;" class="f-icon" href="">
+                                <i style="font-size: 18px;" class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a style="width: 40px;height: 40px;" class="f-icon" href="">
+                                <i style="font-size: 18px;" class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a style="width: 40px;height: 40px;" class="f-icon" href="">
+                                <i style="font-size: 18px;" class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="#"><img style="width: 150px;" src="img/Arwa Logo 1 .png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#products" id="productsDropdown" role="button" aria-expanded="false">
+                            Products </i>
+                        </a>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Motors</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">4" Oil Filled Motor</a></li>
+                                    <li><a class="dropdown-item" href="#">4" Encapsulated Resin Filled Motors</a></li>
+                                    <li><a class="dropdown-item" href="#">4" Water Filled Rewindable Motors</a></li>
+                                    <li><a class="dropdown-item" href="#">6" Water Filled Rewindable Motors</a></li>
+                                    <li><a class="dropdown-item" href="#">8" Water Filled Rewindable Motors</a></li>
+                                    <li><a class="dropdown-item" href="#">9" Water Filled Rewindable Motors</a></li>
+                                    <li><a class="dropdown-item" href="#">10" Water Filled Rewindable Motors</a></li>
+                                    <li><a class="dropdown-item" href="#">Exploded View</a></li>
+                                    <li><a class="dropdown-item" href="#">PMSM Submersible Motors</a></li>
+                                    <li><a class="dropdown-item" href="#">Cable Selection Chart</a></li>
+                                </ul>
+                            </li>
+                             
+                            <li><a class="dropdown-item" href="#">Deepwell Submersible Pumps</a></li>
+                            <li><a class="dropdown-item" href="#">Multistage Inline Pumps</a></li>
+                            <li><a class="dropdown-item" href="#">uPVC Column Pipes & Adaptors</a></li>
+                            <li><a class="dropdown-item" href="#">Cables & Wires</a></li>
+                        </ul> -->
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                </ul>
+
+
+                <div class="d-md-flex ">
+                    <div class="buttons contactBtn " onclick="contactOpen()">
+                        <button style="background-color: #004dd3;"
+                            class="btn text-light fw-bold px-2 ms-lg-3 ms-0"><span></span>
+                            <p data-text="Thanks!" data-title="Request Quote"></p>
+                        </button>
+                    </div>
+
+                    <div class="buttons contactBtn  bbb" style="margin-right: -34px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button style="background-color: #004dd3;"
+                            class="btn text-light fw-bold px-2 ms-md-3 ms-0"><span></span>
+                            <p data-text="Download" data-title="catalogue "></p>
+                        </button>
+                    </div>
+                </div>
+
+
+
+              
+
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Download <span class="text-primary">Catalogue</span></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-item-center justify-content-evenly flex-wrap gap-md-0 gap-4">
+                    <a class="" href="img/ARWA Sub. Motors-50Hz & 60Hz .pdf"
+                        download="ARWA Sub. Motors-50Hz & 60Hz .pdf">
+                        <div class="btn btn-outline-primary">Motors 50Hz & 60Hz pdf</div>
+                    </a>
+                    <a class="" href="img/ARWA DEEPWELL - SUBMRSIBLE PUMPS -50 Hz.pdf"
+                        download="ARWA DEEPWELL - SUBMRSIBLE PUMPS -50 Hz.pdf">
+                        <div class="btn btn-outline-primary">Submersible Pump 50Hz pdf</div>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Request PopUp -->
+    <div class="container-fluid reqAqoute">
+        <div class="row d-flex">
+
+            <div class="containerabt container">
+                <i class="fa-solid fa-xmark h1  "></i>
+
+                <h2 class="text-center mb-4">Request a Quote</h2>
+                <form id="quoteForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" id="name" class="form-control" placeholder="Name">
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" id="email" class="form-control" placeholder="Email">
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="tel" id="phone" class="form-control" placeholder="Phone">
+                            <div class="error-message" id="phone-error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" id="city" class="form-control" placeholder="City">
+                            <div class="error-message" id="city-error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="number" id="pincode" class="form-control" placeholder="Pincode">
+                            <div class="error-message" id="pincode-error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <select id="country" class="form-control">
+                                <option value="" disabled selected>Country</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                            <div class="error-message" id="country-error"></div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <textarea id="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-submit" onclick="validateForm()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Carousel -->
+
+    <div class="hero-section container-fluid px-0 ">
+        <div class="row ">
+
+            <!-- 1 -->
+            <div class="home1 ">
+                <img src="img/Home-1.jpg" alt="">
+            </div>
+            <!-- 2 -->
+            <div class="home1">
+                <img src="img/Home-2.jpg" alt="">
+            </div>
+            <!-- 3 -->
+            <div class="home1 ">
+                <!-- <h1 class="text-light" style="z-index: 111;position: relative;">Home 2</h1> -->
+                <img src="img/Home-3.jpg" alt="">
+            </div>
+            <!-- 4 -->
+            <div class="home1">
+                <img src="img/Home-4.jpg" alt="">
+            </div>
+            <!-- 5 -->
+            <div class="home1 ">
+                <img src="img/Home-5.jpg" alt="">
+            </div>
+            <!-- 1 -->
+            <div class="home1 ">
+                <img src="img/Home-1.jpg" alt="">
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Counter Section -->
+    <div class="counter text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="count">10,000+</h2>
+                    <p>Products Delivered</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="count">50+</h2>
+                    <p>Countries Served</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="count">30+</h2>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why ARWA Section -->
+    <div class="container-fluid whyAlgo py-5 overflow-hidden">
+        <div class="row">
+            <h1 class="text-center">Why <strong style="color: #004dd3">Choose Us</strong></h1>
+            <div class="col-md-5 algoLeft py-2 px-3 px-md-5 mt-4" data-aos="fade-right" data-aos-duration="1400">
+                <img style="width: 100%;height: 100%;object-fit:cover;object-position: top;border-radius: 10px;"
+                    src="img/male-electrician-works-switchboard-with-electrical-connecting-cable (1)-min copy.jpg" alt="">
+            </div>
+            <div class="col-md-7 algoRight px-4 pt-2 mt-4 d-flex align-items-start flex-column" data-aos="fade-left"
+                data-aos-duration="1400">
+                <h1>Why <span><strong>ARWA</strong></span></h1>
+                <h3 class="fw-bold h2 mt-3">25 Years Of Excellence In Production</h3>
+                <p class="mt-4 h5">To make available of all major and technologically advanced Products, spares,
+                    Components and smart flow control gadgets to meet current requirements of pump manufacturers in
+                    India.</p>
+                <p class="mt-4 h5">To facilitate Indian pump industry to improve the overall efficiency by
+                    introducing
+                    most modern pumping intelligence from USA, Europe and China.</p>
+                <p class="mt-4 h5">To Play vital role in Indian pump Industry for producing pumps and systems at par
+                    with international standards and to make Indian brands technically compete with world’s leading
+                    brands.</p>
+                <a style="margin-left: -16px;" href="#products">
+                    <div class="buttons ">
+                        <button style="background-color: #004dd3 ;" class="btn text-white"><span></span>
+                            <p data-start="good luck!" data-text="Products" data-title="Explore "></p>
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product Section -->
+
+    <div class="container-fluid py-5 position-relative" id="products">
+        <div class="row position-relative d-flex align-item-center justify-content-center ">
+            <!-- <div style="width: 100%;" class="productNavList">
+                <div class="row">
+                    <div onclick="showProduct(0)"
+                        class="col-6 col-md-3 py-3 pNav active d-flex align-items-center justify-content-center">
+                        Deepwell Submersible Pumps & Motors</div>
+                    <div onclick="showProduct(1)"
+                        class="col-6 col-md-3 py-3 pNav d-flex align-items-center justify-content-center">
+                        Multistage
+                        Inline Pumps</div>
+                    <div onclick="showProduct(2)"
+                        class="col-6 col-md-3 py-3 pNav d-flex align-items-center justify-content-center">uPVC
+                        Column
+                        Pipes & Adaptors</div>
+                    <div onclick="showProduct(3)"
+                        class="col-6 col-md-3 py-3 pNav d-flex align-items-center justify-content-center">Cables &
+                        Wires</div>
+                </div>
+            </div> -->
+            <div class="w100 d-flex align-item-center justify-content-center">
+                <h1><span>Our Products</span></h1>
+            </div>
+
+            <div class="row ">
+                <div style="width: 100%;"
+                    class="product-one active row px-0 m-0 position-relative d-flex align-item-center justify-content-evenly">
+
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center px-0">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column py-4"
+                            data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+                            <img src="img/3.png" alt="Product Image 1">
+                            <h4 class="text-center">SS Submersible Pumps</h4>
+                            <button onclick="pCardFun(2)" class="btn btn-outline-primary"> Explore More</button>
+                            <!-- <img src="img/p-c-1.jpg" alt="Product Image 2"> -->
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center px-0">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column py-4"
+                            data-aos="fade-up" data-aos-duration="1400" data-aos-delay="450">
+                            <img src="img/4.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                            <button onclick="pCardFun(3)" class="btn btn-outline-primary"> Explore More</button>
+                            <!-- <img src="img/p-c-1.jpg" alt="Product Image 2"> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center px-0">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column py-4"
+                            data-aos="fade-up" data-aos-duration="1400" data-aos-delay="450">
+                            <img src="img/5.png" alt="Product Image 1">
+                            <h4 class="text-center">High Pressure pumps</h4>
+                            <button onclick="pCardFun(4)" class="btn btn-outline-primary"> Explore More</button>
+                            <!-- <img src="img/p-c-1.jpg" alt="Product Image 2"> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center px-0">
+
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column py-4"
+                            data-aos="fade-up" data-aos-duration="1400">
+                            <img src="img/1.png" alt="Product Image 1">
+                            <h2 class="h4 text-center">uPVC Column Pipes</h2>
+                            <button onclick="pCardFun(0)" class="btn btn-outline-primary"> Explore More</button>
+                            <!-- <img src="img/p-c-1.jpg" alt="Product Image 2"> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 py-3 d-flex align-items-center justify-content-center px-0">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column py-4"
+                            data-aos="fade-up" data-aos-duration="1400" data-aos-delay="150">
+                            <img src="img/2.png" alt="Product Image 1">
+                            <h2 class="h4 text-center">Submersible Flat Cable</h2>
+                            <!-- <img src="img/p-c-1.jpg" alt="Product Image 2"> -->
+                            <button onclick="pCardFun(1)" class="btn btn-outline-primary"> Explore More</button>
+                        </div>
+                    </div>
+                   
+                
+                  
+                </div>
+
+
+
+
+                <!-- <div style="width: 100%;"
+                    class="product-one row px-0 m-0 position-relative d-flex align-item-center justify-content-center">
+
+
+
+                    <div style="cursor: pointer;"
+                        class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/5.png" alt="Product Image 1">
+                            <h4 class="text-center ">Vertical & Horizontal Multistage Pumps</h4>
+
+                            
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/3.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/4.png" alt="Product Image 1">
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/1.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;"
+                    class="product-one row px-0 m-0 position-relative d-flex align-item-center justify-content-center">
+
+
+
+                    <div style="cursor: pointer;"
+                        class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/1.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/2.png" alt="Product Image 1">
+                    
+                            <h4 class="text-center">Submersible Motors</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/3.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/4.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;"
+                    class="product-one row px-0 m-0 position-relative d-flex align-item-center justify-content-center">
+
+
+
+                    <div style="cursor: pointer;"
+                        class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/4.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/3.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/2.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 py-3 d-flex align-items-center justify-content-center ">
+                        <div class="pCard border d-flex align-items-center justify-content-center flex-column">
+                            <img src="img/1.png" alt="Product Image 1">
+                            <h4 class="text-center">Submersible Motors</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+                <div class="submersible-pumpsets-1 position-fixed  align-items-center justify-content-center px-0 ">
+                    <i class="fa-solid fa-xmark h1 faX2 " onclick="closedClick(0)"></i>
+
+
+                    <div style="height: 100%;background-color: white;" class="container-fluid px-0">
+                        <div style="height: 100%;" class="row overflow-auto">
+
+                            <div class="col-md-4">
+                                <img style="width: 100%;" src="img/1.png" alt="">
+                                <!-- <div class="row ps-3">
+
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/1.png" alt="">
+                                </div>
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/1.png" alt="">
+                                </div>
+
+                            </div> -->
+                            </div>
+
+                            <div class="col-md-8 py-4 px-2">
+                                <h2 style="color: #004dd3;"> uPVC Column Pipes</h2>
+                                <p>Our uPVC Column Pipes offer superior strength, corrosion resistance, and durability
+                                    for
+                                    borewell and submersible pump applications. Designed for smooth water flow and easy
+                                    installation, they ensure reliable performance with minimal maintenance. Ideal for
+                                    agricultural, industrial, and domestic use, these pipes provide a cost-effective and
+                                    efficient deep well solution.</p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped text-center">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Types</th>
+                                                <th>Sizes</th>
+                                                <th>Max Installation Depth</th>
+                                                <th>Max Pressure Rating</th>
+                                                <th>Max Ambient Temp</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Primo ++</td>
+                                                <td>1", 1.25"</td>
+                                                <td>125m/400ft</td>
+                                                <td>12.5kg/cm²</td>
+                                                <td>70°C</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nano</td>
+                                                <td>1" to 2.5"</td>
+                                                <td>150m/500ft</td>
+                                                <td>15kg/cm²</td>
+                                                <td>70°C</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Medium</td>
+                                                <td>1" to 5"</td>
+                                                <td>210m/700ft</td>
+                                                <td>21kg/cm²</td>
+                                                <td>70°C</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Standard</td>
+                                                <td>1" to 6"</td>
+                                                <td>260m/850ft</td>
+                                                <td>27kg/cm²</td>
+                                                <td>70°C</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heavy</td>
+                                                <td>1.25" to 6"</td>
+                                                <td>350m/1150ft</td>
+                                                <td>35kg/cm²</td>
+                                                <td>70°C</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Super Heavy</td>
+                                                <td>1.5" to 5"</td>
+                                                <td>350m/1150ft</td>
+                                                <td>35kg/cm²</td>
+                                                <td>70°C</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="buttons contactBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button style="background-color: #004dd3;"
+                                        class="btn text-light fw-bold px-2 ms-md-3 ms-0"><span></span>
+                                        <p data-text="Download" data-title="catalogue "></p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="submersible-pumpsets-1  align-items-center justify-content-center px-0">
+                    <i class="fa-solid fa-xmark h1 faX2 " onclick="closedClick(1)"></i>
+
+
+                    <div style="height: 100%;background-color: white;" class="container-fluid px-0">
+                        <div style="height: 100%;" class="row overflow-auto">
+
+                            <div class="col-md-4">
+                                <img style="width: 100%;" src="img/2.png" alt="">
+                                <!-- <div class="row ps-3">
+
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/2.png" alt="">
+                                </div>
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/2.png" alt="">
+                                </div>
+
+                            </div> -->
+                            </div>
+
+                            <div class="col-md-8 py-4 px-2">
+                                <h2 style="color: #004dd3;">Submersible Flat Cable</h2>
+                                <p>Durable and flexible, our Submersible Flat Cables ensure reliable power transmission
+                                    for
+                                    underwater and deep-well applications. Designed for moisture resistance and
+                                    longevity,
+                                    they are ideal for borewell pumps and industrial water systems.</p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped text-center">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Types</th>
+                                                <th>Sizes</th>
+                                                <th>Type</th>
+                                                <th>Insulation</th>
+                                                <th>Sheath</th>
+                                                <th>Voltage</th>
+                                                <th>Temperature Range</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Submersible Cables</td>
+                                                <td>1.5 to 150 Sq.mm</td>
+                                                <td>3 Core / 4 Core, Flat / Round Cables</td>
+                                                <td>PVC / EPDM / NBR / H07RNF</td>
+                                                <td>PVC / EPDM / Rubber</td>
+                                                <td>1100 V</td>
+                                                <td>
+                                                    -15°C to 70°C (PVC Cables) <br>
+                                                    -40°C to 90°C (EPDM & Rubber Cables)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Winding Wires</td>
+                                                <td>0.4 to 3mm</td>
+                                                <td>Polywrap (BOPP) / PVC Winding Wires</td>
+                                                <td colspan="4">-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>PV Solar Cables</td>
+                                                <td>1.5 Sq.mm to 240 Sq.mm</td>
+                                                <td>XLPO Insulation</td>
+                                                <td colspan="2">Withstands max. temp. of 120°C</td>
+                                                <td colspan="2">-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="buttons contactBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button style="background-color: #004dd3;"
+                                        class="btn text-light fw-bold px-2 ms-md-3 ms-0"><span></span>
+                                        <p data-text="Download" data-title="catalogue "></p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="submersible-pumpsets-1  align-items-center justify-content-center px-0">
+                    <i class="fa-solid fa-xmark h1 faX2 " onclick="closedClick(2)"></i>
+                    <div style="height: 100%;background-color: white;" class="container-fluid px-0">
+                        <div style="height: 100%;" class="row overflow-auto">
+
+                            <div class="col-md-4">
+                                <img style="width: 100%;" src="img/3.png" alt="">
+                                <!-- <div class="row ps-3">
+
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/3.png" alt="">
+                                </div>
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/3.png" alt="">
+                                </div>
+
+                            </div> -->
+                            </div>
+
+                            <div class="col-md-8 py-4 px-2">
+                                <h2 style="color: #004dd3;">SS Submersible Pumps</h2>
+                                <p>Durable and corrosion-resistant, our SS Submersible Pumps ensure efficient water flow
+                                    for
+                                    borewells, industries, and agriculture, delivering reliable performance in tough
+                                    conditions.</p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped text-center">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Frequency</th>
+                                                <th>Nominal Dia</th>
+                                                <th>Power Range</th>
+                                                <th>Version</th>
+                                                <th>Speed</th>
+                                                <th>Head Max</th>
+                                                <th>Flow Max</th>
+                                                <th>Outlet Size</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="5">50Hz & 60Hz <br> 0.5HP to 300HP</td>
+                                                <td>3"</td>
+                                                <td>0.37-1.1kW / 0.5-1.5HP</td>
+                                                <td rowspan="5">
+                                                    1Ph - 230V up to 3HP <br>
+                                                    3Ph - 380-415V
+                                                </td>
+                                                <td rowspan="5">2900 rpm / 3450 rpm</td>
+                                                <td>144m / 472ft</td>
+                                                <td>3 ㎥/h</td>
+                                                <td>1"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4"</td>
+                                                <td>0.37-7.5kW / 0.5-10HP</td>
+                                                <td>480m / 1575ft</td>
+                                                <td>20 ㎥/h</td>
+                                                <td>1¼", 1½", 2"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6"</td>
+                                                <td>0.55-63kW / 0.75-85HP</td>
+                                                <td>645m / 2115ft</td>
+                                                <td>76 ㎥/h</td>
+                                                <td>2¼", 2½", 3", 4"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8"</td>
+                                                <td>5.5-110kW / 7.5-150HP</td>
+                                                <td>475m / 1558ft</td>
+                                                <td>126 ㎥/h</td>
+                                                <td>4", 5"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10"</td>
+                                                <td>9.3-220kW / 12.5-300HP</td>
+                                                <td>488m / 1600ft</td>
+                                                <td>280 ㎥/h</td>
+                                                <td>6"</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="buttons contactBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button style="background-color: #004dd3;"
+                                        class="btn text-light fw-bold px-2 ms-md-3 ms-0"><span></span>
+                                        <p data-text="Download" data-title="catalogue "></p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="submersible-pumpsets-1  align-items-center justify-content-center ">
+                    <i class="fa-solid fa-xmark h1 faX2 me-3" onclick="closedClick(3)"></i>
+                    <div style="height: 100%;background-color: white;" class="container-fluid px-0">
+                        <div style="height: 100%;" class="row overflow-auto">
+
+                            <div class="col-md-4">
+                                <img style="width: 100%;" src="img/4.png" alt="">
+                                <!-- <div class="row ps-3">
+
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/3.png" alt="">
+                                </div>
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/3.png" alt="">
+                                </div>
+
+                            </div> -->
+                            </div>
+
+                            <div class="col-md-8 py-4 px-2">
+                                <h2 style="color: #004dd3;">Submersible Motors </h2>
+                                <p>Reliable and efficient, our Submersible Motors deliver high performance for
+                                    borewells,
+                                    industrial, and agricultural applications, ensuring durability and long-lasting
+                                    operation.</p>
+                                <div class="table-responsive">
+                                    <table style="width: 250% ;"
+                                        class="table td4 table-bordered table-striped text-center">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Nominal Dia</th>
+                                                <th>Frequency</th>
+                                                <th>Speed</th>
+                                                <th>Power Range</th>
+                                                <th>Version</th>
+                                                <th>Max. Thrust Load</th>
+                                                <th>Insulation Class</th>
+                                                <th>Protection</th>
+                                                <th>Max. Liquid Temp</th>
+                                                <th>Optional</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="5">4"</td>
+                                                <td>50Hz</td>
+                                                <td>2900 rpm</td>
+                                                <td rowspan="5">0.37-7.5kW / 0.5-10HP</td>
+                                                <td rowspan="5">
+                                                    1Ph - 230V - 50Hz / 1Ph - 110 / 220 / 230V - 60Hz <br>
+                                                    3Ph - 380V - 50Hz / 3Ph - 220 / 230 / 380 / 460V - 60Hz
+                                                </td>
+                                                <td rowspan="5">3000 - 6500 N</td>
+                                                <td rowspan="5">Class Y</td>
+                                                <td rowspan="5">IP 58 / IP 68</td>
+                                                <td rowspan="5">33°C / 70°C (For PE2+PA Winding)</td>
+                                                <td rowspan="5">High Temperature Motor and PT Sensor on request</td>
+                                            </tr>
+                                            <tr>
+                                                <td>60Hz</td>
+                                                <td>3450 rpm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>50Hz</td>
+                                                <td>2900 rpm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>60Hz</td>
+                                                <td>3450 rpm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>50Hz</td>
+                                                <td>2900 rpm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6"</td>
+                                                <td>60Hz</td>
+                                                <td>3450 rpm</td>
+                                                <td>4-45kW / 5.5-60HP</td>
+                                                <td>11550 - 27500 N</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7"</td>
+                                                <td>50Hz</td>
+                                                <td>2900 rpm</td>
+                                                <td>7.5-63kW / 10-85HP</td>
+                                                <td>45000 - 55000 N</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8"</td>
+                                                <td>60Hz</td>
+                                                <td>3450 rpm</td>
+                                                <td>37-93kW / 50-125HP</td>
+                                                <td>45000 - 55000 N</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10"</td>
+                                                <td>50Hz</td>
+                                                <td>2900 rpm</td>
+                                                <td>81-185kW / 110-250HP</td>
+                                                <td>75000 N</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="buttons contactBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button style="background-color: #004dd3;"
+                                        class="btn text-light fw-bold px-2 ms-md-3 ms-0"><span></span>
+                                        <p data-text="Download" data-title="catalogue "></p>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="submersible-pumpsets-1  align-items-center justify-content-center ">
+                    <i class="fa-solid fa-xmark h1 faX2 me-3" onclick="closedClick(4)"></i>
+                    <div style="height: 100%;background-color: white;" class="container-fluid px-0">
+                        <div style="height: 100%;" class="row overflow-auto">
+
+                            <div class="col-md-4">
+                                <img style="width: 100%;" src="img/5.png" alt="">
+                                <!-- <div class="row ps-3">
+
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/3.png" alt="">
+                                </div>
+                                <div style="height: 100px;" class="col-4">
+                                    <img style="width: 100%;height: 100%;" src="img/3.png" alt="">
+                                </div>
+
+                            </div> -->
+                            </div>
+
+                            <div class="col-md-8 py-4 px-2">
+                                <h2 style="color: #004dd3;">Submersible Motors </h2>
+                                <p>Reliable and efficient, our Submersible Motors deliver high performance for
+                                    borewells,
+                                    industrial, and agricultural applications, ensuring durability and long-lasting
+                                    operation.</p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped text-center">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th colspan="7">Vertical Multistage Pumps</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Power Range</strong></td>
+                                                <td colspan="6">0.37-45KW / 0.5-60 HP</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Speed</strong></td>
+                                                <td colspan="6">2900 rpm / 3450 rpm</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Version</strong></td>
+                                                <td colspan="6">1Ph - 230V - 50Hz / 1Ph-110/220/230V-50Hz & 60Hz<br>3Ph
+                                                    - 380V - 50Hz 3Ph - 220 230 380V-50Hz & 60Hz</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!-- <table class="table table-bordered table-striped text-center">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>Nominal Flow</th>
+                                                    <th>Pump Size</th>
+                                                    <th>Power Range</th>
+                                                    <th>Head Max</th>
+                                                    <th>Flow Range</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Nominal Flow</td>
+                                                    <td>1" or 1¼</td>
+                                                    <td>0.37-3kW</td>
+                                                    <td>206m / 675ft</td>
+                                                    <td>1-3.5㎥/h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nominal Flow</td>
+                                                    <td>1" or 1¼</td>
+                                                    <td>0.37-3kW</td>
+                                                    <td>209m / 685ft</td>
+                                                    <td>1.2 - 4㎥/h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nominal Flow</td>
+                                                    <td>1" or 1¼</td>
+                                                    <td>0.37-4kW</td>
+                                                    <td>216m / 798ft</td>
+                                                    <td>1-6㎥/h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nominal Flow</td>
+                                                    <td>1" or 1¼</td>
+                                                    <td>0.37-5.5kW</td>
+                                                    <td>230m / 755ft</td>
+                                                    <td>2-8㎥/h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nominal Flow</td>
+                                                    <td>1¼ or 2"</td>
+                                                    <td>0.37-7.5kW</td>
+                                                    <td>222m / 728ft</td>
+                                                    <td>2-14㎥/h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nominal Flow</td>
+                                                    <td>2" or 21½</td>
+                                                    <td>1.1-15kW</td>
+                                                    <td>224m / 735ft</td>
+                                                    <td>8-24㎥/h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nominal Flow</td>
+                                                    <td>2" or 21½</td>
+                                                    <td>1.1-18.5kW</td>
+                                                    <td>234m / 767ft</td>
+                                                    <td>8-28㎥/h</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped text-center">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th colspan="7">Vertical Multistage Pumps</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Power Range</strong></td>
+                                                    <td colspan="6">0.37-45KW / 0.5-60 HP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Speed</strong></td>
+                                                    <td colspan="6">2900 rpm / 3450 rpm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Version</strong></td>
+                                                    <td colspan="6">1Ph - 230V - 50Hz / 1Ph-110/220/230V-50Hz & 60Hz<br>3Ph - 380V - 50Hz 3Ph - 220 230 380V-50Hz & 60Hz</td>
+                                                </tr>
+                                            </tbody>
+                                        </table> -->
+
+                                    <table class="table table-bordered table-striped text-center">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Nominal Flow</th>
+                                                <th>Pump Size</th>
+                                                <th>Power Range</th>
+                                                <th>Head Max</th>
+                                                <th>Flow Range</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Nominal Flow</td>
+                                                <td>1" or 1¼</td>
+                                                <td>0.37-3kW</td>
+                                                <td>206m / 675ft</td>
+                                                <td>1-3.5㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nominal Flow</td>
+                                                <td>1" or 1¼</td>
+                                                <td>0.37-3kW</td>
+                                                <td>209m / 685ft</td>
+                                                <td>1.2 - 4㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nominal Flow</td>
+                                                <td>1" or 1¼</td>
+                                                <td>0.37-4kW</td>
+                                                <td>216m / 798ft</td>
+                                                <td>1-6㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nominal Flow</td>
+                                                <td>1" or 1¼</td>
+                                                <td>0.37-5.5kW</td>
+                                                <td>230m / 755ft</td>
+                                                <td>2-8㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nominal Flow</td>
+                                                <td>1¼ or 2"</td>
+                                                <td>0.37-7.5kW</td>
+                                                <td>222m / 728ft</td>
+                                                <td>2-14㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nominal Flow</td>
+                                                <td>2" or 21½</td>
+                                                <td>1.1-15kW</td>
+                                                <td>224m / 735ft</td>
+                                                <td>8-24㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nominal Flow</td>
+                                                <td>2" or 21½</td>
+                                                <td>1.1-18.5kW</td>
+                                                <td>234m / 767ft</td>
+                                                <td>8-28㎥/h</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="table table-bordered table-striped text-center">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Nominal Flow</th>
+                                                <th>Power Range</th>
+                                                <th>Pump Size</th>
+                                                <th>Head Max</th>
+                                                <th>Flow Range</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>32㎥/h</td>
+                                                <td>1.5-30kW</td>
+                                                <td>2¼ or 3"</td>
+                                                <td>250m / 820ft</td>
+                                                <td>12-40㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>45㎥/h</td>
+                                                <td>3-45kW</td>
+                                                <td>3"</td>
+                                                <td>309m / 1013ft</td>
+                                                <td>25-55㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>64㎥/h</td>
+                                                <td>4-45kW</td>
+                                                <td>3" or 4"</td>
+                                                <td>214m / 702ft</td>
+                                                <td>30-80㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>90㎥/h</td>
+                                                <td>5.5-45kW</td>
+                                                <td>4"</td>
+                                                <td>168m / 551ft</td>
+                                                <td>55-110㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>120㎥/h</td>
+                                                <td>11-75kW</td>
+                                                <td>5"</td>
+                                                <td>162m / 526ft</td>
+                                                <td>60-150㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>150㎥/h</td>
+                                                <td>11-75kW</td>
+                                                <td>5"</td>
+                                                <td>157m / 510ft</td>
+                                                <td>80-180㎥/h</td>
+                                            </tr>
+                                            <tr>
+                                                <td>200㎥/h</td>
+                                                <td>85-110kW</td>
+                                                <td>6"</td>
+                                                <td>157m / 510ft</td>
+                                                <td>100-240㎥/h</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="buttons contactBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button style="background-color: #004dd3;"
+                                        class="btn text-light fw-bold px-2 ms-md-3 ms-0"><span></span>
+                                        <p data-text="Download" data-title="catalogue "></p>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <script>
+                    let pCardOpen = document.getElementsByClassName('submersible-pumpsets-1');
+                    // let pcard = document.getElementsByClassName('.pCard');
+
+                    function pCardFun(index) {
+                        pCardOpen[index].style.display = "block";
+                        document.body.style.overflow = "hidden";
+
+                    }
+
+
+                    function closedClick(index) {
+                        document.body.style.overflow = "auto";
+                        pCardOpen[index].style.display = "none";
+                    }
+                </script>
+
+            </div>
+
+        </div>
+
+        <script>
+            document.querySelectorAll('.pNav').forEach(item => {
+                item.addEventListener('click', function () {
+                    document.querySelectorAll('.pNav').forEach(nav => {
+                        nav.classList.remove('active');
+                    });
+
+                    this.classList.add('active');
+                });
+            });
+
+            let pCardVar = document.querySelector('.pcard');
+            pCardVar.addEventListener('click', function () {
+                document.querySelector('.card-1-detail').style.display = "flex"
+            })
+        </script>
+    </div>
+    <!-- Features Section -->
+    <div style="background-color: rgba(128, 128, 128, 0.212);" class="py-5 ">
+        <div class="container text-center">
+            <h2 class="mb-4">Our <strong>Features</strong></h2>
+            <p class="mb-5 text-muted">Discover the exceptional benefits that set us apart.</p>
+            <div class="features-container">
+                <div class="feature-card" data-aos="fade-up" data-aos-duration="1400">
+                    <i style="color: #004dd3;" class="fas fa-industry"></i>
+                    <h4>Global Reach</h4>
+                    <p>Supplying components worldwide with recognized quality.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-duration="1400">
+                    <i style="color: #004dd3;" class="fas fa-cogs"></i>
+                    <h4>Precision Design</h4>
+                    <p>Delivering advanced technology and precision-engineered parts.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-duration="1400">
+                    <i style="color: #004dd3;" class="fas fa-globe"></i>
+                    <h4>Innovative Solutions</h4>
+                    <p>Meeting the evolving needs of OEMs with innovation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+
+
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from satisfied customers worldwide.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial d-flex align-items-center">
+                        <img src="img/client01.jpeg" alt="Client">
+                        <div>
+                            <h5>John Doe</h5>
+                            <p>"ARWA provided exceptional solutions that exceeded our expectations."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial d-flex align-items-center">
+                        <img src="img/client01.jpeg" alt="Client">
+                        <div>
+                            <h5>Jane Smith</h5>
+                            <p>"Their innovative products helped us achieve outstanding efficiency."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class=" text-white bg-primary py-4 pt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 d-flex flex-column align-items-start footer-card">
+                    <h2><strong>Quick Links</strong></h2>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">Home</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">About Us</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">Contact Us</a>
+                    <div class="icon-box d-flex gap-3 fs-4 mt-4">
+                        <a class="f-icon" href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="f-icon" href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="f-icon" href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column align-items-start footer-card mt-md-0 mt-4">
+                    <h2><strong>Our Products</strong></h2>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">Deepwell Submersible Pumps &
+                        Motors</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">Multisatge Inline Pumps</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">uPVC Column Pipes & Adaptors</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">Cables & Wires</a>
+
+                </div>
+                <div class="col-md-3 d-flex flex-column align-items-start footer-card mt-md-0 mt-4">
+                    <h2><strong>Pump Spares</strong></h2>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">Multistage Inline Pumps Spares</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="">Pressure Booster Accessories
+                        Spares</a>
+
+
+                </div>
+                <div class="col-md-3 d-flex flex-column align-items-start footer-card mt-md-0 mt-4">
+                    <h2><strong>Address</strong></h2>
+                    <a style="text-decoration:none;color: rgba(255, 255, 255, 0.582) ;" class="mt-3 ft-list"
+                        href="">Ahemdabad, Gujarat</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list" href="tel:+918098770708">+91 80987 70708</a>
+                    <a style="text-decoration:none;" class="mt-3 ft-list"
+                        href="mailto:arwapumps48@gmail.com">arwapumps48@gmail.com</a>
+
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid grey;" class="container text-center mt-md-0 mt-3 pt-3">
+            <p> 2025 &copy; ARWA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <!-- Aos Cdn js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
