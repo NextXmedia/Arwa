@@ -1083,6 +1083,7 @@ a.nav-link:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 /* Footer Sec */
 footer {
