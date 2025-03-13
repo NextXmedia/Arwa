@@ -1079,12 +1079,11 @@ a.nav-link:hover {
 .table th {
   background-color: #004dd3 !important;
 }
-.table td{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+  .table td, 
+    .table th {
+        text-align: center; /* Center horizontally */
+        vertical-align: middle; /* Center vertically */
+    }
 /* Footer Sec */
 footer {
   background: linear-gradient(90deg, #1e3c72, #004dd3);
